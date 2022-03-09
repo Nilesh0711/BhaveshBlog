@@ -40,7 +40,7 @@ let topic9 = ['Into. to Stats Mech', 'KTG and Thermodynamics fiziks notes', 'Sta
 let topic10 = ['Waves, Oscillation & Optics Notes fiziks']
 
 let accordin = document.getElementById('accordionExample')
-let count = 0, number = 1;
+let count = 1, number = 1;
 
 Array.from(title).forEach(element => {
     accordin.innerHTML += `
@@ -55,25 +55,16 @@ Array.from(title).forEach(element => {
                     </div>
                 </div>`
 
-    if (count == 0) {
+    if (count == 1) {
         topic1.forEach(e => {
-            let id = document.getElementById('topic0')
-            id.innerHTML += 
-            `<li class="list-group-item list-group-item-light">
-                <a href="Physics JEST_NET_GATE/${element}/${e}.pdf" target="_blank">${e}</a> <br>
-            </li>`
-        });
-    } else if (count == 1) {
-        topic2.forEach(e => {
             let id = document.getElementById('topic1')
             id.innerHTML += 
             `<li class="list-group-item list-group-item-light">
                 <a href="Physics JEST_NET_GATE/${element}/${e}.pdf" target="_blank">${e}</a> <br>
             </li>`
         });
-    }
-    else if (count == 2) {
-        topic3.forEach(e => {
+    } else if (count == 2) {
+        topic2.forEach(e => {
             let id = document.getElementById('topic2')
             id.innerHTML += 
             `<li class="list-group-item list-group-item-light">
@@ -82,7 +73,7 @@ Array.from(title).forEach(element => {
         });
     }
     else if (count == 3) {
-        topic4.forEach(e => {
+        topic3.forEach(e => {
             let id = document.getElementById('topic3')
             id.innerHTML += 
             `<li class="list-group-item list-group-item-light">
@@ -91,7 +82,7 @@ Array.from(title).forEach(element => {
         });
     }
     else if (count == 4) {
-        topic5.forEach(e => {
+        topic4.forEach(e => {
             let id = document.getElementById('topic4')
             id.innerHTML += 
             `<li class="list-group-item list-group-item-light">
@@ -100,7 +91,7 @@ Array.from(title).forEach(element => {
         });
     }
     else if (count == 5) {
-        topic6.forEach(e => {
+        topic5.forEach(e => {
             let id = document.getElementById('topic5')
             id.innerHTML += 
             `<li class="list-group-item list-group-item-light">
@@ -109,7 +100,7 @@ Array.from(title).forEach(element => {
         });
     }
     else if (count == 6) {
-        topic7.forEach(e => {
+        topic6.forEach(e => {
             let id = document.getElementById('topic6')
             id.innerHTML += 
             `<li class="list-group-item list-group-item-light">
@@ -118,26 +109,35 @@ Array.from(title).forEach(element => {
         });
     }
     else if (count == 7) {
-        topic8.forEach(e => {
+        topic7.forEach(e => {
             let id = document.getElementById('topic7')
-            id.innerHTML +=
-            `<li class="list-group-item list-group-item-light">
-                <a href="Physics JEST_NET_GATE/${element}/${e}.pdf" target="_blank">${e}</a> <br>
-            </li>`
-        });
-    }
-    else if (count == 8) {
-        topic9.forEach(e => {
-            let id = document.getElementById('topic8')
             id.innerHTML += 
             `<li class="list-group-item list-group-item-light">
                 <a href="Physics JEST_NET_GATE/${element}/${e}.pdf" target="_blank">${e}</a> <br>
             </li>`
         });
     }
+    else if (count == 8) {
+        topic8.forEach(e => {
+            let id = document.getElementById('topic8')
+            id.innerHTML +=
+            `<li class="list-group-item list-group-item-light">
+                <a href="Physics JEST_NET_GATE/${element}/${e}.pdf" target="_blank">${e}</a> <br>
+            </li>`
+        });
+    }
     else if (count == 9) {
-        topic10.forEach(e => {
+        topic9.forEach(e => {
             let id = document.getElementById('topic9')
+            id.innerHTML += 
+            `<li class="list-group-item list-group-item-light">
+                <a href="Physics JEST_NET_GATE/${element}/${e}.pdf" target="_blank">${e}</a> <br>
+            </li>`
+        });
+    }
+    else if (count == 10) {
+        topic10.forEach(e => {
+            let id = document.getElementById('topic10')
             id.innerHTML += 
             `<li class="list-group-item list-group-item-light">
                 <a href="Physics JEST_NET_GATE/${element}/${e}.pdf" target="_blank">${e}</a> <br>
