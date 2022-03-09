@@ -104,7 +104,7 @@ Array.from(title).forEach(element => {
             let id = document.getElementById('topic5')
             id.innerHTML += 
             `<li class="list-group-item list-group-item-light">
-                <light href="Physics JEST_NET_GATE/${element}/${e}.pdf" target="_blank">${e}</a> <br>
+                <a href="Physics JEST_NET_GATE/${element}/${e}.pdf" target="_blank">${e}</a> <br>
             </li>`
         });
     }
